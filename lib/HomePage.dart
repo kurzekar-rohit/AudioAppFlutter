@@ -36,39 +36,221 @@ class _HomePageState extends State<HomePage> {
       body: Container(
         child: Center(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Image(
                 image: AssetImage("images/logo.png"),
               ),
-              Expanded(
-                child: GridView.builder(
-                  padding: EdgeInsets.all(10.0),
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
-                    childAspectRatio: 2.0,
-                    crossAxisSpacing: 10.0,
-                    mainAxisSpacing: 10.0,
-                  ),
-                  itemCount: numberList.length,
-                  itemBuilder: (context, i) => SizedBox(
-                    width: 100.0,
-                    height: 50.0,
-                    child: RaisedButton(
-                      color: numberList[i].buttonColor,
-                      child: Text(
-                        numberList[i].buttonText,
-                        style: TextStyle(
-                          fontSize: 20.0,
-                          color: Colors.white,
+              Container(
+                child: Row(
+                  children: <Widget>[
+                    Expanded(
+                      child: RaisedButton(
+                        padding: EdgeInsets.symmetric(
+                            vertical: 16.0, horizontal: 24.0),
+                        onPressed: () {
+                          play(numberList[0].audioUri);
+                        },
+                        child: Text(
+                          numberList[0].buttonText,
+                          style: TextStyle(
+                            fontSize: 20.0,
+                            color: Colors.white,
+                          ),
                         ),
+                        color: numberList[0].buttonColor,
+                        textColor: Colors.white,
                       ),
-                      onPressed: () {
-                        play(numberList[i].audioUri);
-                      },
                     ),
-                  ),
+                    Expanded(
+                      child: RaisedButton(
+                        padding: EdgeInsets.symmetric(
+                            vertical: 16.0, horizontal: 24.0),
+                        onPressed: () {
+                          play(numberList[1].audioUri);
+                        },
+                        child: Text(
+                          numberList[1].buttonText,
+                          style: TextStyle(
+                            fontSize: 20.0,
+                            color: Colors.white,
+                          ),
+                        ),
+                        color: numberList[1].buttonColor,
+                        textColor: Colors.white,
+                      ),
+                    ),
+                  ],
                 ),
-              )
+              ),
+              Container(
+                child: Row(
+                  children: <Widget>[
+                    Expanded(
+                      child: RaisedButton(
+                        padding: EdgeInsets.symmetric(
+                            vertical: 16.0, horizontal: 24.0),
+                        onPressed: () {
+                          play(numberList[2].audioUri);
+                        },
+                        child: Text(
+                          numberList[2].buttonText,
+                          style: TextStyle(
+                            fontSize: 20.0,
+                            color: Colors.white,
+                          ),
+                        ),
+                        color: numberList[2].buttonColor,
+                        textColor: Colors.white,
+                      ),
+                    ),
+                    Expanded(
+                      child: RaisedButton(
+                        padding: EdgeInsets.symmetric(
+                            vertical: 16.0, horizontal: 24.0),
+                        onPressed: () {
+                          play(numberList[3].audioUri);
+                        },
+                        child: Text(
+                          numberList[3].buttonText,
+                          style: TextStyle(
+                            fontSize: 20.0,
+                            color: Colors.white,
+                          ),
+                        ),
+                        color: numberList[3].buttonColor,
+                        textColor: Colors.white,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                child: Row(
+                  children: <Widget>[
+                    Expanded(
+                      child: RaisedButton(
+                        padding: EdgeInsets.symmetric(
+                            vertical: 16.0, horizontal: 24.0),
+                        onPressed: () {
+                          play(numberList[4].audioUri);
+                        },
+                        child: Text(
+                          numberList[4].buttonText,
+                          style: TextStyle(
+                            fontSize: 20.0,
+                            color: Colors.white,
+                          ),
+                        ),
+                        color: numberList[4].buttonColor,
+                        textColor: Colors.white,
+                      ),
+                    ),
+                    Expanded(
+                      child: RaisedButton(
+                        padding: EdgeInsets.symmetric(
+                            vertical: 16.0, horizontal: 24.0),
+                        onPressed: () {
+                          play(numberList[5].audioUri);
+                        },
+                        child: Text(
+                          numberList[5].buttonText,
+                          style: TextStyle(
+                            fontSize: 20.0,
+                            color: Colors.white,
+                          ),
+                        ),
+                        color: numberList[5].buttonColor,
+                        textColor: Colors.white,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                child: Row(
+                  children: <Widget>[
+                    Expanded(
+                      child: RaisedButton(
+                        padding: EdgeInsets.symmetric(
+                            vertical: 16.0, horizontal: 24.0),
+                        onPressed: () {
+                          play(numberList[6].audioUri);
+                        },
+                        child: Text(
+                          numberList[6].buttonText,
+                          style: TextStyle(
+                            fontSize: 20.0,
+                            color: Colors.white,
+                          ),
+                        ),
+                        color: numberList[6].buttonColor,
+                        textColor: Colors.white,
+                      ),
+                    ),
+                    Expanded(
+                      child: RaisedButton(
+                        padding: EdgeInsets.symmetric(
+                            vertical: 16.0, horizontal: 24.0),
+                        onPressed: () {
+                          play(numberList[7].audioUri);
+                        },
+                        child: Text(
+                          numberList[7].buttonText,
+                          style: TextStyle(
+                            fontSize: 20.0,
+                            color: Colors.white,
+                          ),
+                        ),
+                        color: numberList[7].buttonColor,
+                        textColor: Colors.white,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                child: Row(
+                  children: <Widget>[
+                    Expanded(
+                      child: RaisedButton(
+                        padding: EdgeInsets.symmetric(
+                            vertical: 16.0, horizontal: 24.0),
+                        onPressed: () {
+                          play(numberList[8].audioUri);
+                        },
+                        child: Text(
+                          numberList[8].buttonText,
+                          style: TextStyle(
+                            fontSize: 20.0,
+                            color: Colors.white,
+                          ),
+                        ),
+                        color: numberList[8].buttonColor,
+                        textColor: Colors.white,
+                      ),
+                    ),
+                    Expanded(
+                      child: RaisedButton(
+                        padding: EdgeInsets.symmetric(
+                            vertical: 16.0, horizontal: 24.0),
+                        onPressed: () {
+                          play(numberList[9].audioUri);
+                        },
+                        child: Text(
+                          numberList[9].buttonText,
+                          style: TextStyle(
+                            fontSize: 20.0,
+                            color: Colors.white,
+                          ),
+                        ),
+                        color: numberList[9].buttonColor,
+                        textColor: Colors.white,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
